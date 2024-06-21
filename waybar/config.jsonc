@@ -1,0 +1,65 @@
+{
+    "height": 30, 
+    "width": 1300,
+    "spacing": 10, 
+    "margin-top": 5,
+    "margin-bottom": -5,
+
+
+    "modules-left": [
+        "custom/launch_wofi",
+        "clock"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "hyprland/language",
+        "tray"
+    ],
+
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10,
+        "tooltip": false
+    },
+    "clock": {
+        "format": "{:%H:%M | %B %d. %A }"
+    },
+    "cpu": {
+        "format": "|  {usage}%",
+        "interval": 10,
+        "max-length": 10,
+        "tooltip": true
+    },
+    "memory": {
+        "format": "RAM: {}% |",
+        "tooltip": true
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " {icon} ",
+        "format-icons": {
+            "headset": "",
+            "default": ["", "", ""]
+        },
+        "scroll-step": 3,
+        "on-click": "pavucontrol" 
+    },
+    "custom/launch_wofi": {
+        "format": "",
+        "on-click": "pkill wofi; wofi --show drun",
+        "tooltip": false
+    },
+    "hyprland/language": {
+        "format": "{} ",
+        "format-en": "US",
+        "format-ru": "RU"
+    }
+}
