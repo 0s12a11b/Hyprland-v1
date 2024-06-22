@@ -2,7 +2,7 @@
     "height": 30, 
     "width": 1300,
     "spacing": 10, 
-    "margin-top": 5,
+    "margin-top": 3,
     "margin-bottom": -5,
 
 
@@ -14,11 +14,11 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "tray",
         "pulseaudio",
         "cpu",
         "memory",
-        "hyprland/language",
-        "tray"
+        "hyprland/language"
     ],
 
 
@@ -31,17 +31,16 @@
         "format": "{:%H:%M | %B %d. %A }"
     },
     "cpu": {
-        "format": "|  {usage}%",
+        "format": " {usage}%",
         "interval": 10,
         "max-length": 10,
         "tooltip": true
     },
     "memory": {
-        "format": "RAM: {}% |",
+        "format": "RAM: {}%",
         "tooltip": true
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon}",
         "format-bluetooth-muted": " {icon} ",
@@ -54,7 +53,7 @@
     },
     "custom/launch_wofi": {
         "format": "",
-        "on-click": "pkill wofi; wofi --show drun",
+        "on-click": "pkill wofi; wofi --show",
         "tooltip": false
     },
     "hyprland/language": {

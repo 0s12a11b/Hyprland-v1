@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: rgb(31, 28, 28);
+    background-color: rgb(10, 16, 43);
     border-bottom: 2px solid rgb(0, 0, 0);
     color: #cdd6f4;
     transition-property: background-color;
@@ -81,10 +81,6 @@ label:focus {
     font-size: 16px;
 }
 
-#disk {
-    background-color: #964B00;
-}
-
 #pulseaudio {
     font-size: 16px;
     padding-right: 6px;
@@ -96,7 +92,10 @@ label:focus {
 }
 
 #tray {
-    margin-right: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-right: 3px;
+    padding-left: 3px;
     padding-bottom: 1px;
     font-size: 16px;
 }
